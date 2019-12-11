@@ -85,9 +85,7 @@ handleDisplay() {
 // Keyboard event handler
 void
 handleKeyPress(unsigned char key, int x, int y) {
-    x=0;
-    y=0;
-
+    printf("Coordinate:[%d],[%d]\n",x,y);
     switch (key) {
     case 'q':
     case 'Q':
