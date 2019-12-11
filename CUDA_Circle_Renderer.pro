@@ -41,7 +41,8 @@ DISTFILES += \
     badCudaRenderer.cu \
     exclusiveScan.cu_inl \
     circleBoxTest.cu_inl \
-    CUDA_Circle_Renderer.pro.user
+    CUDA_Circle_Renderer.pro.user \
+    README.md
 
 # CUDA
 # Path to cuda toolkit install
