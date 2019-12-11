@@ -74,8 +74,8 @@ int main(int argc, char** argv)
         case 'm':
             if (std::string(optarg).compare("bad") == 0) {
                 goodMode = false;
-                printf("IN THIS MODE YOU WILL HAVE GRAPHICAL GLITCHES\n"
-                       "CAUSED BY DEVICE RACE CONDITIONS\n\n");
+                printf("IN QUESTA MODALITÀ VEDRAI GLITCH GRAFICI\n"
+                       "CAUSATI DA RACE CONDITIONS SUL DEVICE\n\n");
             }
             break;
         case '?':

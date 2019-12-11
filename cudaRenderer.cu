@@ -189,11 +189,9 @@ __global__ void kernelRenderCircles() {
         // controllo se il cerchio è effettivamente sul pixel
         // o se lo era solo il quadrato che lo contiene
         if (pixelDist <= maxDist){
-            float3 rgb;
-            float alpha;
             int index3 = 3 * circleIndex;
-            rgb = *(float3*)&(cuConstRendererParams.color[index3]);
-            alpha = .5f;
+            float3 rgb = *(float3*)&(cuConstRendererParams.color[index3]);
+            float alpha = .5f;
 
             float oneMinusAlpha = 1.f - alpha;
             pixelData.x = alpha * rgb.x + oneMinusAlpha * pixelData.x;

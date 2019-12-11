@@ -105,11 +105,11 @@ CheckBenchmark(
     printf("Tempo complessivo:  %.4f sec\n", totalTime);
     printf("\n");
     printf("Tempi medi per frame:\n");
-    printf("Clear  - CPU: %.4f ms       GPU: %.4f ms\n", (1000.f * totalRefClearTime / totalFrames), (1000.f * totalCudaClearTime / totalFrames));
-    printf("Render - CPU: %.4f ms    GPU: %.4f ms\n", (1000.f * totalRefRenderTime / totalFrames), (1000.f * totalCudaRenderTime / totalFrames));
-    printf("Totale - CPU: %.4f ms    GPU: %.4f ms\n", ((1000.f * totalRefClearTime / totalFrames))+(1000.f * totalRefRenderTime / totalFrames),
+    printf("Clear  - CPU: %.2f ms       GPU: %.2f ms\n", (1000.f * totalRefClearTime / totalFrames), (1000.f * totalCudaClearTime / totalFrames));
+    printf("Render - CPU: %.2f ms    GPU: %.2f ms\n", (1000.f * totalRefRenderTime / totalFrames), (1000.f * totalCudaRenderTime / totalFrames));
+    printf("Totale - CPU: %.2f ms    GPU: %.2f ms\n", ((1000.f * totalRefClearTime / totalFrames))+(1000.f * totalRefRenderTime / totalFrames),
            (1000.f * totalCudaClearTime / totalFrames)+(1000.f * totalCudaRenderTime / totalFrames));
     printf("\n");
-    printf("Fattore di Speedup ottenuto: %.2f\n",(((1000.f * totalRefClearTime / totalFrames))+(1000.f * totalRefRenderTime / totalFrames))/
+    printf("Fattore di Speedup ottenuto: %.4f\n",(((1000.f * totalRefClearTime / totalFrames))+(1000.f * totalRefRenderTime / totalFrames))/
            ((1000.f * totalCudaClearTime / totalFrames)+(1000.f * totalCudaRenderTime / totalFrames)));
 }

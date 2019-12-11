@@ -5,7 +5,7 @@ Build System:
 
 This was made with Qt Creator on an Arch Linux laptop with dedicated NVidia chip.
 
-I have installed the NVidia proprietary drivers, CUDA libraries, bumblebee packege, and optirun packege to able to make the graphic chip work only when needed (thank you NVidia for porting Optimus tecnology to Linux...).
+I have installed the NVidia proprietary drivers, CUDA libraries, bumblebee package, and optirun package to able to make the graphic chip work only when needed (thank you NVidia for porting Optimus tecnology to Linux...).
 
 This means that if you want to use your NVidia chip on your laptop you have to prepend "optirun" before the name of the built executable.
 
